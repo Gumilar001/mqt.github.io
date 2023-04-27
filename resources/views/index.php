@@ -22,12 +22,15 @@
    background: linear-gradient(to right, #BD0EE9, #76BDF0);
  } 
  .lingkaran{
+  float: left;
+  position: relative; bottom: 500px; left: 85px;
   width: 200px;
   height: 200px;
-  background: #dac52c;
-  border-radius: 100%;
-  vertical-align: center;
-  overflow: hidden;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 3px 10px 10px gray;
+  text-align: center;
+  align-items: center;
 }
 
 .gambar{
@@ -57,19 +60,20 @@
 
   <section class="h-100" class="body">
     <div class="form-left" style="position: relative;">
-      <br><img class="gambar" src="img/Group 1.png" >
-      <div style="position: absolute;top: 40px;left: 90px;">
+      <br><img class="gambar" src="/image/1.png" alt="My Image">
+
+      <img style="position: relative; bottom: 950px " src="/image/image1.png">
+
+      <div style="position: absolute;top: 60px;left: 90px;">
         <br><br><br><h3 style="color: #6430E3;" >Welcome</h3>
         <h1 class="tex">Connect to MQTT to Continue</h2>
         </div>
       </div>
+
+      
+
       <div class="container h-100">      
         <div class="form-section">
-          <!-- <div class="text-center my-5">
-            <div style="width: 300px; height: 300px; border-radius: 50%; background-color: #ccc;">
-              <img src="img/Saturn.png" >
-            </div>
-          </div> -->
           <div class="card shadow-lg" style="top: 100px;right: 120px;">
             <div class="card-body p-5">
               <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
@@ -92,7 +96,7 @@
                     <label for="remember" class="form-check-label">Remember Me</label>
                   </div> -->                  
                   <button type="submit" class="btn btn-primary">
-                  Login
+                  Connect
                   </button>
                 </div>                
               </form>
@@ -104,13 +108,18 @@
             </div>
           </div>
           <div >
-          <img src="img/Vectary texture.png" style="margin-right: 150px;"></div>
           <!-- <div class="text-center mt-5 text-muted">
             Copyright &copy; 2017-2021 &mdash; Your Company  -->
           </div>
         </div>
       </div>
     </div>
+    <div class="lingkaran">
+      <img src="/image/Saturn.png" width="200px" height="200px">
+      <h3 style="position: relative; bottom: 50px;">MQTT</h3>
+    </div>
+  <img style="position: relative; right: 1100px;" src="/image/image2.png">
+  <img style="position: relative; bottom: 420px; left: 100px;" src="/image/image3.png">
   </section>
 </body>
 <script type="script.js"></script>
