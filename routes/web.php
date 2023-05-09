@@ -17,6 +17,6 @@ Route::get('/home', function () {
     return view('index');
 });
 
-Route::get('/coba', function(){
-    return view('coba');
+Route::get('/koneksi', function(){
+    return view('konek');
 });
