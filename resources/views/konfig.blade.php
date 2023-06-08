@@ -12,7 +12,7 @@
         <style>
             body {
             font-family: "Lato", sans-serif;
-            background: linear-gradient(to right, #76BDF0,#E496BC);
+            background: linear-gradient(to right, #BD0EE9, #76BDF0);
             
             }
 

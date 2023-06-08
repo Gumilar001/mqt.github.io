@@ -12,11 +12,25 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/home', function () {
-    return view('index');
+Route::get('/', function(){
+    return view('welcome');
 });
 
-Route::get('/koneksi', function(){
+Route::get('/konfig', function(){
+    return view('konfig');
+});
+
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+Route::get('/regis', function () {
+    return view('regis');
+});
+
+Route::get('/konek', function(){
     return view('konek');
-});
+})->name('konek');
+
+Route::get('/halaman', 'HalamanController@metode');
+

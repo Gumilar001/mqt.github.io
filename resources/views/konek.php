@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="This is a login page template based on Bootstrap 5">
   <title>MQTT</title>
+  <script src="https://cdn.tiny.cloud/1/5rjztrmw4gfutjk5amgeb8x4wcrt3sm6x3s7oq08buly9cv1/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <style type="text/css">
    .form-section {
@@ -127,7 +128,7 @@ a:hover {
 <div style="border-radius:8px; position: relative; top: 20px; width: 250px; height: 400px; background-color: #eee;">
 <nav class="left">
   <ul>
-    <li><a href="#">Menu 1</a></li>
+    <li><a href="/home">Menu 1</a></li>
     <li><a href="#">Menu 2</a></li>
     <li><a href="#">Menu 3</a></li>
     <li class="nav-item dropdown">
@@ -141,13 +142,37 @@ a:hover {
         </li>
     <li><a href="#">Menu 4</a></li>
   </ul>
-  <img style="position: relative; top: 150px;" src="/image/min.png">
-  <img style="position: relative; top: 150px; left: 190px;" src="/image/plus.png">
+  <img type=button href="#" style="position: relative; top: 150px;" src="/image/min.png">
+  <img type=button href="index.php" style="position: relative; top: 150px; left: 190px;" src="/image/plus.png">
+  <!-- <button type="button" style="position: relative; top: 140px;" href="#"><img  src="/image/min.png"></button>
+  <button type="button" style="position: relative; top: 100px; left: 210px;" href="#"><img src="/image/plus.png"></button> -->
 </nav>
 </div>
 </div>
 <div class="form-section">
-  <img src="/image/1.png">
+<script src="tinymce/tinymce.min.js"></script>
+
+<script type="text/javascript">
+
+tinymce.init({
+
+    selector: "textarea",
+
+    plugins: [
+
+        "advlist autolink lists link image charmap print preview anchor",
+
+        "searchreplace visualblocks code fullscreen",
+
+        "insertdatetime media table contextmenu paste"
+
+    ],
+
+toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+
+});
+
+</script>
 </div>
 
 </body>
