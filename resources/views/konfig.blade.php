@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Dashboard
 
     </title>
@@ -12,7 +13,7 @@
         <style>
             body {
             font-family: "Lato", sans-serif;
-            background: linear-gradient(to right, #BD0EE9, #76BDF0);
+            background: linear-gradient(to right, #76BDF0, #E496BC);
             
             }
 
@@ -112,6 +113,14 @@
                 font-weight: bold;
                 text-align: center;
             }
+            .image {
+            flex: 0 0 auto;
+            margin-right: 0px;
+            }
+            .container {
+            display: flex;
+            align-items: center;
+        }
         </style>
 
     </head>
@@ -128,21 +137,133 @@
         </div>
 
     <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="burger">&#9776;</span>
-    <button style="font-size:20px;cursor:pointer" class="keluar"><i class="fa fa-sign-out"></i> Logout </button>
+    <button style="font-size:20px;cursor:pointer; position: relative; left:300px" class="keluar"><i class="fa fa-sign-out"></i> Logout </button>
 
     <div class="perangkat">
-        <button style="font-size:25px;cursor:pointer" class="aktif"><i class="fa fa-users">
-         perangkat aktif <br> 7 </i></button>
-
-         <button style="font-size:25px;cursor:pointer" class="total"><i class="fa fa-users">
-         jumlah perangkat <br> 15 </i></button>
-
-         <button style="font-size:25px;cursor:pointer" class="non"><i class="fa fa-users">
-         perangkat non-aktif <br> 8 </i></button>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100" style="width: 335px; border-radius:20px; box-shadow: 3px 10px 10px gray;">                
+                <div class="card-body">
+                <div class="container">
+                <img src="/image/people.png" class="image" alt="gambar">                
+                <h5 class="card-title" style="margin-left:20px">Perangkat Aktif</h5></div>              
+                <h1 class="card-text" style="margin-left: 180px;">7</h1>                
+                </div>
+                <div class="text-center">                
+                <div class="card-footer">
+                  <small class="text-muted">Device</small>
+                </div>
+              </div>
+            </div>
+        </div>
+            <div class="text-center">
+            <div class="col">
+              <div class="card h-100" style="width: 300px; border-radius:20px; box-shadow: 3px 10px 10px gray;">
+                <div class="card-body shadow-lg">
+                    <div class="container">
+                  <h5 class="card-title" style="margin-left: 35px">Jumlah Perangkat</h5></div>
+                  <h1 class="card-text">15</h1>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Device</small>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="width: 335px; border-radius:20px; box-shadow: 3px 10px 10px gray;">                
+                  <div class="card-body shadow-lg">
+                  <div class="container">
+                  <img src="/image/people.png" class="image" alt="gambar">                
+                  <h5 class="card-title" style="margin-left:20px">Perangkat Non-Aktif</h5></div>              
+                  <h1 class="card-text" style="margin-left: 180px;">8</h1>                
+                  </div>
+                  <div class="text-center">                
+                  <div class="card-footer">
+                    <small class="text-muted">Device</small>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
     </div>
 
+    <div class="perangkat">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card h-100" style="width: 400px; border-radius:20px; box-shadow: 3px 10px 10px gray; left:100px">                
+                <div class="card-body">
+                <div class="container">                        
+                <h5 class="card-title" style="margin-left:20px">Perangkat Aktif</h5></div>              
 
-    <div class="tabel1">
+                <table class="table" style="text-align: center">
+                    <thead>
+                      <tr>
+                        <th scope="col">Perangkat</th>  
+                        <th scope="col">Topic</th>                     
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>                        
+                        <td>Device-1</td>
+                        <td>Weather</td>
+                      </tr>
+                      <tr>                        
+                        <td>Device-2</td>
+                        <td>Temperature</td>
+                      </tr>
+                      <tr>                        
+                        <td>Device-3</td>
+                        <td>Hypertext</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+                <div class="text-center">                
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary">next <img src="image/Vector 64.png"></button>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+            <div class="col">
+                <div class="card h-100" style="width: 400px; border-radius:20px; box-shadow: 3px 10px 10px gray;">                
+                  <div class="card-body shadow-lg">
+                  <div class="container">                                 
+                  <h5 class="card-title" style="margin-left:60px">List Perangkat</h5></div>
+                  <table class="table" style="text-align: center">
+                    <thead>
+                      <tr>
+                        <th scope="col">Perangkat</th>                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>                        
+                        <td>Device-1</td>
+                      </tr>
+                      <tr>                        
+                        <td>Device-2</td>
+                      </tr>
+                      <tr>                        
+                        <td>Device-3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  </div>
+                  <div class="text-center">                
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-primary">next <img src="image/Vector 64.png"></button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+    </div>
+
+    {{-- <div class="tabel1">
         <table style="width:20%" class="taktif">
             <tr style="background-color: red">
                 <td colspan="3" class="tname">perangkat aktif</td>
@@ -185,7 +306,7 @@
                     <td> Hypertext </td>
                 </tr></table>
     
-    </div>
+    </div> --}}
     
 
         <script>

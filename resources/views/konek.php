@@ -49,7 +49,7 @@
     
 </style>
 </head>
-<body>
+<>
 <nav class="navbar navbar-expand">
         <div class="container">
           <a class="navbar-brand" href="#"><h1 style="color: black;">MQTT</h1></a>
@@ -149,33 +149,20 @@ a:hover {
 </nav>
 </div>
 </div>
-<div class="form-section">
-<script src="tinymce/tinymce.min.js"></script>
+<form>
+  <input type="text" name="" placeholder="Judul" style="width: 100%;padding: 10px;"><br><br>
+  <textarea class="ckeditor" id="ckedtor"></textarea><br>
+  <input type="submit" name="" value="Kirim">
+ </form>
 
-<script type="text/javascript">
-
-tinymce.init({
-
-    selector: "textarea",
-
-    plugins: [
-
-        "advlist autolink lists link image charmap print preview anchor",
-
-        "searchreplace visualblocks code fullscreen",
-
-        "insertdatetime media table contextmenu paste"
-
-    ],
-
-toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
-
-});
-
+<script src="https://cdn.ckeditor.com/ckeditor5/38.0.1/classic/ckeditor.js"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
 </script>
-</div>
 
-</body>
-<script type="script.js"></script>
 </body>
 </html>
